@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^dashboard$ home.php [L]
+
+RewriteRule ^siswa$ home.php?module=pages/views/v_siswa [L]
+RewriteRule ^nilai$ home.php?module=pages/views/v_nilai [L]
+RewriteRule ^pelajaran$ home.php?module=pages/views/v_pelajaran [L]
+
+RewriteRule ^keluar$ logout.php [L]
+</IfModule>
